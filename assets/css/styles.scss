@@ -1,0 +1,52 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333333;
+
+#shalimar-home{
+
+  .pad_b_0 {
+  	padding-bottom: 0px;
+  }
+  .pad_5 {
+  	padding: 5px;
+  }
+  .mar_b_0 {
+  	margin-bottom: 0px;
+  }
+
+  .pos_rel {
+  	position: relative;
+  }
+
+  .height_30 {height:30px;}
+
+  #jumbotron {
+  	max-height:450px;
+  	overflow: hidden;
+ 
+ #jumbotron-bg-container {
+ 	background: url("assets/media/hero_1.jpg")
+ }
+
+  #jumbotron-img {
+  	    -webkit-filter: grayscale(85%);
+       -moz-filter: grayscale(85%);
+         -o-filter: grayscale(85%);
+        -ms-filter: grayscale(85%);
+            filter: grayscale(85%); 
+  }
+
+  #jumbotron-logo-corner {
+  	position: absolute;
+  	top: 5%;
+  	right: 2%;
+  	width:20%;
+  }
+  
+  #jumbotron-logo-middle {
+  	position: absolute;
+  	bottom: 20px;
+  	width: 40%;
+  	left: 30%;
+  }
+}
+}

@@ -1,0 +1,33 @@
+#shalimar-home .pad_b_0 {
+  padding-bottom: 0px; }
+#shalimar-home .pad_5 {
+  padding: 5px; }
+#shalimar-home .mar_b_0 {
+  margin-bottom: 0px; }
+#shalimar-home .pos_rel {
+  position: relative; }
+#shalimar-home .height_30 {
+  height: 30px; }
+#shalimar-home #jumbotron {
+  max-height: 450px;
+  overflow: hidden; }
+  #shalimar-home #jumbotron #jumbotron-bg-container {
+    background: url("assets/media/hero_1.jpg"); }
+  #shalimar-home #jumbotron #jumbotron-img {
+    -webkit-filter: grayscale(85%);
+    -moz-filter: grayscale(85%);
+    -o-filter: grayscale(85%);
+    -ms-filter: grayscale(85%);
+    filter: grayscale(85%); }
+  #shalimar-home #jumbotron #jumbotron-logo-corner {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 20%; }
+  #shalimar-home #jumbotron #jumbotron-logo-middle {
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    left: 30%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -4,80 +4,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
-        <!-- Latest compiled and minified CSS -->
+        
+        <!-- jQuery - Minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <!-- Bootstrap - Minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
+        <!-- Bootstrap - Minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        
 
         <title>Shalimar Clinic</title>
     </head>
     
     <body>
     
-    <div>
-        <div id="shalimar-home" class="container">
+        <div id="shalimar-home"> 
+            <div class="container">
 
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-default mar_b_0 pad_5">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li><img src="assets/media/logo_small.png" width="50px"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-            <!-- End Nav Bar -->
+                <!-- Nav Bar -->
+                <nav class="navbar navbar-default mar_b_0 pad_5">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                        <a class="navbar-brand pad_0" href="#"><img src="assets/media/logo_small.png" width="50px"></a>
 
-        <!-- Jumbotron -->
-        <div id="jumbotron" class="row">
-            <div class="col-xs-12">
-                <div class="pos_rel">
-                <img id="jumbotron-img" class="img-responsive" src="assets/media/hero_1.jpg">
-                <img id="jumbotron-logo-corner" class="visible-md-block visible-lg-block" src="assets/media/logo_large.png">
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+                <!-- End Nav Bar -->
 
-                <img id="jumbotron-logo-middle" class="visible-xs-block visible-sm-block" src="assets/media/logo_large.png">
+            <!-- Jumbotron -->
+            <div id="jumbotron" class="row">
+                <div class="col-xs-12">
+                    <div class="pos_rel">
+                    <img id="jumbotron-img" class="img-responsive" src="assets/media/hero_1.jpg">
+                    <img id="jumbotron-logo-corner" class="visible-md-block visible-lg-block" src="assets/media/logo_large.png">
+
+                    <img id="jumbotron-logo-middle" class="visible-xs-block visible-sm-block" src="assets/media/logo_large.png">
+                    </div>
                 </div>
             </div>
+            <!-- End Jumbotron -->
+
+            <div class="row height_30"></div>
+
+            <!-- Our Mission -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Our Mission</h1>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center lead">We strive to provide best possible and evidence based clinical service to patients, suffering from general medical and chest diseases, at an affordable cost.</p>
+                </div>
+            </div>
+            <!-- End - Our Mission -->
+
+            <div class="row height_15"></div>
+            <hr />
+            <div class="row height_30"></div>
+
+            <!-- Services -->
+            <div id="services" class="row">
+                <div class="col-xs-12 pad_b_20">
+                    <h1 class="text-center">Our Services</h1>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_1.jpg");"></div>
+                    <div class="services-title-container text-center">Medical Consultation</div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_3.jpg");"></div>
+                    <div class="services-title-container text-center">Bronchoscopy</div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_4.jpg");"></div>
+                    <div class="services-title-container text-center">Lung Function Testing</div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_5.jpg");"></div>
+                    <div class="services-title-container text-center">Sleep Studies</div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_6.jpg");"></div>
+                    <div class="services-title-container text-center">ECG</div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_7.jpg");"></div>
+                    <div class="services-title-container text-center">Chest Ultrasound</div>
+                </div>
+                <div class="col-xs-12 col-md-4 tile visible-md-block visible-lg-block">
+                    <span class="services-title text-center"></span>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="stretch tile" style="background-image:url(assets/media/services_2.jpg");"></div>
+                    <div class="services-title-container text-center">Pleural Procedures</div>
+                </div>
+            </div>
+            <!-- End Services -->
+
+            <div class="row height_30"></div>
         </div>
-        <!-- End Jumbotron -->
 
-        <div class="row height_30"></div>
-
-        <!-- Our Mission -->
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="text-center">Our Mission</h1>
-            </div>
-            <div class="col-xs-12">
-                <p class="text-center lead">We strive to provide the highest quality of healthcare at a reasonable price for the service of community.</p>
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div id="footer" class="row">
+                <div class="col-xs-12 pad_t_20">
+                </div>
+                <p class="text-center">All Rights Reserved. Shalimar Clinic &copy; 2017</p>
             </div>
         </div>
-        <!-- End - Our Mission -->
-
-        <div class="row height_30"></div>
-
-        <!-- Services -->
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="text-center">Our Services</h1>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3 class="text-center">Bronchoscopy</h3>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3 class="text-center">General Checkup</h3>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3 class="text-center">Lungs Cleaning</h3>
-            </div>
-        </div>
-        <!-- End Services -->
-
     </div>
     </body>
 </html>

@@ -1,18 +1,33 @@
 #shalimar-home .pad_b_0 {
   padding-bottom: 0px; }
+#shalimar-home .pad_b_20 {
+  padding-bottom: 20px; }
+#shalimar-home .pad_t_20 {
+  padding-top: 20px; }
+#shalimar-home .pad_0 {
+  padding: 0px; }
 #shalimar-home .pad_5 {
   padding: 5px; }
 #shalimar-home .mar_b_0 {
   margin-bottom: 0px; }
 #shalimar-home .pos_rel {
   position: relative; }
+#shalimar-home .pos_abs {
+  position: absolute; }
 #shalimar-home .height_30 {
   height: 30px; }
+#shalimar-home .height_15 {
+  height: 15px; }
+#shalimar-home .stretch {
+  height: 100%;
+  width: 100%; }
+#shalimar-home .vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
 #shalimar-home #jumbotron {
   max-height: 450px;
   overflow: hidden; }
-  #shalimar-home #jumbotron #jumbotron-bg-container {
-    background: url("assets/media/hero_1.jpg"); }
   #shalimar-home #jumbotron #jumbotron-img {
     -webkit-filter: grayscale(85%);
     -moz-filter: grayscale(85%);
@@ -29,5 +44,35 @@
     bottom: 20px;
     width: 40%;
     left: 30%; }
+#shalimar-home #services .tile {
+  height: 200px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  transition: 0.2s -webkit-filter linear;
+  -webkit-transition: 0.2s -webkit-filter linear;
+  background-size: cover;
+  -webkit-filter: grayscale(80%) blur(1px);
+  -moz-filter: grayscale(80%) blur(1px);
+  -o-filter: grayscale(80%) blur(1px);
+  -ms-filter: grayscale(80%) blur(1px);
+  filter: grayscale(80%) blur(1px); }
+#shalimar-home #services .tile:hover {
+  -webkit-filter: grayscale(20%);
+  -moz-filter: grayscale(20%);
+  -o-filter: grayscale(20%);
+  -ms-filter: grayscale(20%);
+  filter: grayscale(20%); }
+#shalimar-home #services .services-title-container {
+  width: 100%;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 1px 1px #333;
+  position: absolute;
+  top: 40%; }
+#shalimar-home #footer {
+  background-color: #731B19;
+  min-height: 100px;
+  color: white;
+  font-size: 16px; }
 
 /*# sourceMappingURL=styles.css.map */

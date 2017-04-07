@@ -87,14 +87,21 @@ $primary-color: #333333;
 			-o-filter: grayscale(20%);
 			-ms-filter: grayscale(20%);
 			filter: grayscale(20%); 
+			cursor: pointer;
 		}
 		.services-title-container {
-			width: 92%; 
+			width: 100%; 
 			font-size: 2em;
 			color: #ffffff;
 			text-shadow: 1px 1px #333;
 			position: absolute;
 			top: 40%;
+		}
+		.services-title-container:hover {
+			cursor: pointer;
+		}
+		.service-desc {
+			margin-bottom: 15px;
 		}
 	}
 

@@ -79,5 +79,27 @@
   min-height: 100px;
   color: white;
   font-size: 16px; }
+#shalimar-home #modal {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); }
+  #shalimar-home #modal #text-box {
+    background-color: white;
+    width: 300px;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px; }
+    #shalimar-home #modal #text-box div#modal-text {
+      overflow: scroll;
+      height: 150px;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

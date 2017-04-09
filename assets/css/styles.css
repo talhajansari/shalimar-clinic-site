@@ -56,13 +56,6 @@
   -o-filter: grayscale(80%) blur(1px);
   -ms-filter: grayscale(80%) blur(1px);
   filter: grayscale(80%) blur(1px); }
-#shalimar-home #services .tile:hover {
-  -webkit-filter: grayscale(20%);
-  -moz-filter: grayscale(20%);
-  -o-filter: grayscale(20%);
-  -ms-filter: grayscale(20%);
-  filter: grayscale(20%);
-  cursor: pointer; }
 #shalimar-home #services .services-title-container {
   width: 100%;
   font-size: 2em;
@@ -70,7 +63,14 @@
   text-shadow: 1px 1px #333;
   position: absolute;
   top: 40%; }
-#shalimar-home #services .services-title-container:hover {
+#shalimar-home #services .service-tile:hover > .tile {
+  -webkit-filter: grayscale(20%);
+  -moz-filter: grayscale(20%);
+  -o-filter: grayscale(20%);
+  -ms-filter: grayscale(20%);
+  filter: grayscale(20%);
+  cursor: pointer; }
+#shalimar-home #services .service-tile:hover > .services-title-container {
   cursor: pointer; }
 #shalimar-home #services .service-desc {
   margin-bottom: 15px; }

@@ -59,11 +59,22 @@ function showModal(title, desc) {
 	$('#modal').show();
 }
 
+function goto (id) {
+	document.getElementById(id).scrollIntoView();
+}
+
+function initMap() {
+        var uluru = {lat: 33.6071436, lng: 73.0126884};
+        var map = new google.maps.Map(document.getElementById('contact-map'), {
+          zoom: 15,
+          center:uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
 $('document').ready(function() {
 	initJS();
 });
-
-function goto (url) {
-	window.location = url;
-}

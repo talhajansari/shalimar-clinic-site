@@ -6,11 +6,23 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
         
         <!-- jQuery - Minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <!-- Bootstrap - Minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Bootstrap - Minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Google Analytics - Tracking -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-36899823-3', 'auto');
+          ga('send', 'pageview');
+
+        </script>
 
         
 
@@ -23,7 +35,7 @@
             <div class="container">
 
                 <!-- Nav Bar -->
-                <nav class="navbar navbar-default mar_b_0 pad_5">
+                <nav id="nav-bar" class="navbar navbar-default mar_b_0 pad_5">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -36,10 +48,10 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse-main">
                       <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#" onclick="goto('#services')">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home" onclick="goto('nav-bar')">Home</a></li>
+                        <li><a href="#services" onclick="goto('services')">Services</a></li>
+                        <li><a href="#about" onclick="goto('mission')">About Us</a></li>
+                        <li><a href="#contact" onclick="goto('contact')">Contact</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -61,18 +73,24 @@
             <div class="row height_30"></div>
 
             <!-- Our Mission -->
-            <div class="row">
+            <div id="mission" class="row">
                 <div class="col-xs-12">
                     <h1 class="text-center">Our Mission</h1>
                 </div>
                 <div class="col-xs-12">
-                    <p class="text-center lead">We aim to provide the best possible, evidence based clinical service to those suffering from general medical and chest conditions.</p>
+                    <p class="text-center lead">To provide the best possible, cost effective, and evidence based clinical service. To serve those suffering from general medical and chest conditions.</p>
                 </div>
             </div>
             <!-- End - Our Mission -->
 
-            <div class="row height_15"></div>
-            <hr />
+            <div class="row height_15">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <hr style="width: 100%; color: #AAA; height: 1px; background-color:#AAA;" />
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+            
             <div class="row height_30"></div>
 
             <!-- Services -->
@@ -124,8 +142,8 @@
                     </div>
                     <div class="service-desc" style="display: none;">Chest ultrasound is the use of medical ultrasonography to perform imaging of the chest. It can be considered either a diagnostic or a screening procedure. It may be useful in younger women, where the denser fibrous tissue may make mammograms more difficult to interpret.</div>
                 </div>
-                <!-- <div class="col-xs-12 col-md-4 tile visible-md-block visible-lg-block">
-                </div> -->
+                <div class="col-xs-12 col-md-4 tile visible-md-block visible-lg-block">
+                </div>
                 <div idx="6" class="service-box col-xs-12 col-md-4">
                     <div class="service-tile" style="position:relative;">
                         <div class="stretch tile" style="background-image:url(assets/media/services_2.jpg");"></div>
@@ -136,11 +154,61 @@
             </div>
             <!-- End Services -->
 
+            <div class="row height_15">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <hr style="width: 100%; color: #AAA; height: 1px; background-color:#AAA;" />
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+            <!-- About Us -->
+            <div id="about" class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">About Us</h1>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center">
+                        Shalimar Clinic has been founded and run by <strong>Maj. Gen. (R) Jawad Khaliq Ansari</strong>. Dr. Jawad completed his training from UK. He has over two decades of experience in medical and chest care. Prior to founding Shalimar Clinic, Dr. Jawad led Army Medical College - one of the most prestigious medical colleges in Pakistan - and served at Military Hospital, Rawalpindi. 
+                    </p>
+                </div>
+            </div>
+            <!-- End - About Us -->
+
+            <div class="row height_15">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <hr style="width: 100%; color: #AAA; height: 1px; background-color:#AAA;" />
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Contact</h1>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center lead">
+                        <br />
+                        <strong>Shalimar Chest Clinic</strong> <br />
+                        Rafae Mall - 1st Floor <br />
+                        Choor Chowk <br />
+                        Rawalpindi, Pakistan<br />
+                        For Appointments: 0321 5189152<br />
+                    </p>
+
+                    <div id="contact-map"></div>
+                </div>
+            </div>
+            <!-- End - Contact -->
+
             <div class="row height_30"></div>
         </div>
 
+
         <!-- Footer -->
-        <div class="container-fluid">
+        <div id="footer" class="container-fluid">
             <div id="footer" class="row">
                 <div class="col-xs-12 pad_t_20">
                 </div>
@@ -158,5 +226,10 @@
     </div>
     </body>
 
+    
+    
     <script type="text/javascript" src="./javascript.js""></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA529oZLCCKVEBZ7wT9FgxRWmUV3lY68WE&callback=initMap">
+    </script>
 </html>

@@ -74,6 +74,10 @@
   cursor: pointer; }
 #shalimar-home #services .service-desc {
   margin-bottom: 15px; }
+#shalimar-home #contact #contact-map {
+  height: 300px;
+  width: 500px;
+  margin: 0 auto; }
 #shalimar-home #footer {
   background-color: #731B19;
   min-height: 100px;

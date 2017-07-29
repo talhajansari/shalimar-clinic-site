@@ -25,6 +25,8 @@
   display: inline-block;
   vertical-align: middle;
   float: none; }
+#shalimar-home #nav-bar #navbar-collapse-main ul li a {
+  cursor: pointer; }
 #shalimar-home #jumbotron {
   max-height: 450px;
   overflow: hidden; }

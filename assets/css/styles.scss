@@ -37,7 +37,10 @@ $primary-color: #333333;
   	vertical-align: middle;
   	float:none;
   }
-
+  #nav-bar #navbar-collapse-main ul li a {
+  	cursor: pointer;
+  }
+  
   #jumbotron {
   	max-height:450px;
   	overflow: hidden;
